@@ -32,5 +32,3 @@ int main()
     printf("\nDecimal= %d", decimal);
     return 0;
 }
-
-
