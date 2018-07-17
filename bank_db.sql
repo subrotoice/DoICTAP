@@ -1,3 +1,7 @@
+1. Ch - 3
+2. This Doc
+3. https://www.w3schools.com/sql
+-------------------------- Good 2 Go ----------------------------------------
 // Create test table with all CONSTRAINT -Subroto- ⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽
 // person (id(primary) autoin, name, age>18, City)
 // students( id (primary), scholarship(decimal 10.2 ), person_id(Foreign))
