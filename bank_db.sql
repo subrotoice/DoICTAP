@@ -179,7 +179,7 @@ Problem no-04: Find the name of customer who have both loan and account.
 Problem no-05: Find the name of customer who have account but not loan.
 Problem no-06: Find average balance in ‘Horeseneck’ city.
 Problem no-07: Find the name of customer in ‘Harrison’ city or live in street name ‘North’.
-Problem no-08: Find the name of customer in whose balance greater than average balance. VVI
+Problem no-08: Find the name of customer in whose balance greater than average balance. (VVI)
 Problem no-09: Find the average balance of ‘Perryridge’ city.
 
 
