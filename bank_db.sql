@@ -101,6 +101,7 @@ insert into loan() values('' ,"Redwood","L-23","2000");
 insert into loan() values('' ,"Mianus","L-93","500");
 insert into loan() values('' ,"Kushtia","L-95","3300");
 insert into loan() values('' ,"Rajbari","L-98","1233");
+insert into loan() values('' ,"Perryridge","L-18","1000");
 
 create table persons(
 p_id int(10),
@@ -152,9 +153,9 @@ Problem no-1: Find all loan number and amount from loan made at Perryridge branc
 Problem no-2: Find all customer names and loan_number who have a loan from the bank.
 Problem no-3: Find the name and loan_number of all customers who have a loan at the “Perryridge” branch.
 Problem no-4: Find the name of all customer whos street address includes the substring “Hill”.
-Problem no-5: To list in alphabetic order all customers who have a loan at “Perryridge” branch.
-Problem no-6: To find all customer having loan and account at the bank. //May be Intersect is not present in Mysql, union is present. See Ans.
-Problem no-7:-Find the the average balance for each customer who lives in Harrison and has at least three accounts. // VVI
+Problem no-5: List in alphabetic order all customers who have a loan at “Perryridge” branch.
+Problem no-6: Find all customer having loan and account at the bank. //May be Intersect is not present in Mysql, union is present. See Ans.
+Problem no-7: Find the the average balance for each customer who lives in Harrison and has at least three accounts. // VVI
 
 ✈️✈️✈️✈️✈️✈️✈️✈✈️✈️✈️✈️✈️✈️✈️✈️ Second Round ✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈️✈
 
@@ -228,12 +229,15 @@ Query:  select distinct customer_name, borrower.loan_number as loan_id from borr
 Problem no-4: Find the name of all customer whos street address includes the substring “Hill”.
 Query: select customer_name,customer_street from customer where customer_street like "%Hill";
 
-Problem no-5: To list in alphabetic order all customers who have a loan at “Perryridge” branch.
-Query: select distinct customer_name from borrower,loan where borrower.loan_number=loan.loan_number and branch_name="Perryridge" order by           customer_name;
+Problem no-5: List in alphabetic order all customers who have a loan at “Perryridge” branch.
+Query: select distinct customer_name from borrower, loan where borrower.loan_number=loan.loan_number and branch_name="Perryridge" order by customer_name;
 
-Problem no-6: To find all customer having loan and account at the bank.
+Problem no-6: Find all customer having loan and account at the bank.
 Query: select distinct borrower.customer_name from depositor,borrower where borrower.customer_name=depositor.customer_name;
 
+Problem no-7: Find the the average balance for each customer who lives in Harrison and has at least three accounts.
+Query: select c.customer_name, avg(balance) from account a, depositor d, customer c where a.account_number=d.account_number and d.customer_name=c.customer_name and customer_city='Harrison'
+group by customer_name having count(distinct c.customer_name)>=3;
 
 
 
