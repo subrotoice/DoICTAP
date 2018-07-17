@@ -172,15 +172,15 @@ Depositor- (customer_name, account_number)
 Loan- (branch_name, loan_number, amount)
 Borrower- (customer_name, loan_number)
 
-Problem no-01:-Find the name branches in the loan relation whose loan amounts less than 1000.
-Problem no-02:-Find the account numbers whose balance equal or greater than 700.
-Problem no-03:-Find the name of customer who have account.
-Problem no-04:-Find the name of customer who have both loan and account.
-Problem no-05:-Find the name of customer who have account but not loan.
-Problem no-06:-Find average balance in ‘Horeseneck’ city.
-Problem no-07:-Find the name of customer in ‘Harrison’ city or live in street name ‘North’.
-Problem no-08:-Find the name of customer in whose balance greater than average balance.
-Problem no-09:-Find the average balance of ‘Perridge’ city.
+Problem no-01: Find the name branches in the loan relation whose loan amounts less than 1000.
+Problem no-02: Find the account numbers whose balance equal or greater than 700.
+Problem no-03: Find the name of customer who have account.
+Problem no-04: Find the name of customer who have both loan and account.
+Problem no-05: Find the name of customer who have account but not loan.
+Problem no-06: Find average balance in ‘Horeseneck’ city.
+Problem no-07: Find the name of customer in ‘Harrison’ city or live in street name ‘North’.
+Problem no-08: Find the name of customer in whose balance greater than average balance. VVI
+Problem no-09: Find the average balance of ‘Perryridge’ city.
 
 
 
@@ -247,34 +247,34 @@ group by customer_name having count(distinct c.customer_name)>=3;
 
 -----Second Round---Details: https://docs.google.com/document/d/1gQQPDF7oVXGfL9tZxp1kJ4aToriJRiJoRe7Rf8to-Xg/edit?usp=sharing ------
 
-Query-01:-Find the name branches in the loan relation whose loan amounts less than 1000.
+Problem no-01: Find the name branches in the loan relation whose loan amounts less than 1000.
 Query: select branch_name from loan where amount<1000;
 
-Query-02:-Find the account numbers whose balance equal or greater than 700.
+Problem no-02: Find the account numbers whose balance equal or greater than 700.
 Query: select account_number from account where balance>=700;
 
-Query-03:-Find the name of customer who have account.
+Problem no-03: Find the name of customer who have account.
 Query: select customer_name from depositor,account where depositor.account_number=account.account_number;
 
-Query-04:-Find the name of customer who have both loan and account.
+Problem no-04: Find the name of customer who have both loan and account.
 Query: select distinct borrower.customer_name from depositor,borrower where borrower.customer_name=depositor.customer_name;
 
-Problem no-05:-Find the name of customer who have account but not loan.
+Problem no-05: Find the name of customer who have account but not loan.
 Query: select customer_name from depositor where customer_name not in (select customer_name from borrower);
 
-Problem no-06:-Find average balance in ‘Horseneck’ city.
+Problem no-06: Find average balance in ‘Horseneck’ city.
 Query: select avg(balance) as average from branch,account where account.branch_name=branch.branch_name and branch.branch_city='Horeseneck'
 group by branch_city;
 
 
-Problem no-07:-Find the name of customer in ‘Harrison’ city or live in street name ‘North’.
+Problem no-07: Find the name of customer in ‘Harrison’ city or live in street name ‘North’.
 Query: select customer_name from customer where customer_city='HARRISON' or customer_street='NORTH';
 
-Problem no-08:-Find the name of customer in whose balance greater than average balance.
+Problem no-08: Find the name of customer in whose balance greater than average balance.
 Query:  select customer_name,balance from depositor,account 
         where depositor.account_number=account.account_number and balance>(select avg(balance) from account);
 
-Problem no-09:-Find the average balance of ‘Perridge’ city.
+Problem no-09: Find the average balance of ‘Perridge’ city.
 Query: select avg(balance) as average from account where branch_name='Perridge';
 
 
