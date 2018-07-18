@@ -36,7 +36,11 @@ $conn->query($sql);
 $sql = "delete from student where age=44";
 $conn->query($sql);
 
-
+================Some Modify Command============
+alter table students add dist varchar(255);
+alter table students drop dist;
+alter table students modify dist int;
+alter table students change dist dist3 date;
 
 ============HTML==========
 <html>
