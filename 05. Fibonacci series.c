@@ -25,29 +25,31 @@ int main()
 
 
 // Using Recursive Function
-#include <stdio.h>
-    int fibo(int);
-    int main()
-
+#include<stdio.h>
+int fibonacci(int n)
+{
+    if((n==1)||(n==0))
     {
-        int num;
-        int result;
-        printf("Enter the nth number in fibonacci series: ");
-        scanf("%d", &num);
+        return(n);
+    }
+    else
+    {
+        return(fibonacci(n-1)+fibonacci(n-2));
+    }
+}
 
-        result = fibo(num);
-        printf("The %d number in fibonacci series is %d\n", num, result);
+int main()
+{
+    int n,i=0;
+    printf("Input the number of terms for Fibonacci Series:");
+    scanf("%d",&n);
+    printf("\nFibonnaci Series is as follows\n");
 
-        return 0;
+    while(i<n)
+    {
+        printf("%d ",fibonacci(i));
+        i++;
     }
 
-    int fibo(int num)
-    {
-        if (num == 0) {
-            return 0;
-        } else if (num == 1) {
-            return 1;
-        } else {
-            return(fibo(num - 1) + fibo(num - 2));
-        }
-    }
+    return 0;
+}
