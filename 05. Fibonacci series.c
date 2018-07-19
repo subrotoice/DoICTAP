@@ -1,23 +1,27 @@
 /*
-* C Program to print fibonacci series - Update 19/07/2017 - Subroto
+* Fibonacci to n terms - Update 19/07/2018 - Subroto
 */
 #include <stdio.h>
-#include <conio.h>
+void revString();
 
-int main(){
-    int counter, newNumber, firstNumber=1, secondNumber=0, terms;
-    printf("Enter number of termination in Fibonacci series: ");
-    scanf("%d", &terms);
+int main()
+{
+    int i, n, currentNumber=0, lastNumber=0, secondLastNumber=1;
+    printf("Enter the number of term: \n");
+    scanf("%d", &n);
 
-    for(counter=firstNumber; counter<=terms; ++counter){
-        newNumber=firstNumber+secondNumber;
-        firstNumber=secondNumber;
-        secondNumber=newNumber;
-        printf("%d ", newNumber);
+    for(i=1;i<=n;i++){
+        printf("%d ", currentNumber);
+        currentNumber=secondLastNumber+lastNumber;
+        secondLastNumber=lastNumber;
+        lastNumber=currentNumber;
+
     }
 
     return 0;
 }
+
+
 
 
 // Using Recursive Function
