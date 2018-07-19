@@ -2,13 +2,19 @@
                                             Time: 1 hour        Full Mark- 100
                                             ----------------------------------
 
-Qu: 1. Identify middle number among three.
-Qu: 2. 2.5.8 + 5.8.11 + 8.11.14 + .......  Sum series to n   
-Qu: 3. Display following triangle
+Qu: 1. Identify middle number among three.   (5 marks)
+Qu: 2. 2.5.8 + 5.8.11 + 8.11.14 + .......  Sum series to n    (10 marks)
+Qu: 3. Display following triangle     (10 marks)
         2
         3   4
         4   5   6
         5   6   7   8
         6   7   8   9   10
 
-Qu: 4. 
+Qu: 5. Create a database in mysql and create students table and sotre upper field. and run the following query (25 marks)
+        a. Show student name whos age is more then or equal to 8 years.     (5 marks)
+        b. Display studnet record accouding to gread high to low     (10 marks)
+        c. Count student whos gread is above 60%     (10 marks)
+
+Qu: 4. Create a HTML form that can input students record (ID, NAME, Age, Date og Birth, Gread) and insert uising PHP in upper 
+       database autometically.       (25 marks)
