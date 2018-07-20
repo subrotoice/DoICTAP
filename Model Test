@@ -10,6 +10,13 @@ Qu: 3. Display following triangle     (20 marks)
         4   5   6
         5   6   7   8
         6   7   8   9   10
+        
+        or
+        
+                  1
+                2    2
+             3    3     3
+          4    4     4     4
 
 Qu: 5. Create a database in mysql and create students table and sotre upper field. and run the following query (25 marks)
         a. Show student name whos age is more then or equal to 8 years.     (5 marks)
