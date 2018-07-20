@@ -30,3 +30,20 @@ int main() {
 
   return 0;
 }
+
+===============Recursive Call==================
+int gcd(int a, int b);
+int main()
+{
+
+    printf("%d", gcd(12,18));
+
+    return 0;
+}
+
+int gcd(int a, int b){
+    if(a==0)
+        return b;
+
+    return gcd(b%a, a);
+}
