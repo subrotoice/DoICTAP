@@ -18,7 +18,7 @@ Qu: 3. Display following triangle     (20 marks)
              3    3     3
           4    4     4     4
 
-Qu: 5. Create a database in mysql and create students table and sotre upper field. and run the following query (25 marks)
+Qu: 5. Create a database in mysql and create students table and sotre upper field. and run the following query.
         a. Show student name whos age is more then or equal to 8 years.     (5 marks)
         b. Display studnet record accouding to gread high to low     (10 marks)
         c. Count student whos gread is above 60%     (10 marks)
