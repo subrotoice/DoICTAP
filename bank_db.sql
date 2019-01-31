@@ -6,7 +6,7 @@
 // person (id(primary) autoin, name, age>18, City)
 // students( id (primary), scholarship(decimal 10.2 ), person_id(Foreign))
 
-⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽
+⚽⚽⚽⚽⚽⚽⚽ Copy and paste in SQL backend from here to create table and insert data for bank schema ⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽
 
 create table person(
 id int AUTO_INCREMENT,
@@ -143,6 +143,8 @@ select * from branch;
 select * from customer;
 select * from loan;
 
+⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽ End here Copy and paste  ⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽                                                                                                                    
+                                                                                                                     
 Customer- (customer_name, customer_street, customer_city)
 Branch- (branch_name, branch_city, assets)
 
