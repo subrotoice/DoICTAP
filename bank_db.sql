@@ -25,7 +25,7 @@ foreign key(person_id) references person(id)
 );
 
 create table account(Branch_name varchar(30), Account_number varchar(30), Balance DECIMAL( 10, 2 ), primary key(Account_number));
-
+ 
 insert into account() values ("Downtown","A-101","500");
 insert into account() values ("Perryridge","A-102","400");
 insert into account() values ("Perryridge","A-103","600");
