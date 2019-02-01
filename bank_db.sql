@@ -143,7 +143,7 @@ select * from branch;
 select * from customer;
 select * from loan;
 
-⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽ End here Copy and paste  ⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽                                                                                                                    
+⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽ // End here Copy and paste  ⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽⚽                                                                                                                    
                                                                                                                      
 Customer- (customer_name, customer_street, customer_city)
 Branch- (branch_name, branch_city, assets)
